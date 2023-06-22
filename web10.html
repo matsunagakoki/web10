@@ -1,0 +1,180 @@
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>サンプルページ</title>
+  <style>
+    /* 全体のスタイル */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* サイト全体の最大幅を設定 */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ヘッダーエリア */
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .logo {
+      /* ロゴのスタイル */
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #61D2F8;
+      margin-top: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .breadcrumbs {
+      /* パンくずリストのスタイル */
+      font-style: italic;
+    }
+
+    /* ビジュアルエリア */
+    .visual-area {
+      background-color: #eaeaea;
+      padding: 20px;
+    }
+
+    /* コンテンツエリア */
+    .content-area {
+      display: flex;
+      justify-content: center; /* コンテンツをセンター寄せにする */
+    }
+
+    main {
+      /* メインコンテンツのスタイル */
+      flex: 2;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    aside {
+      /* サイドバーのスタイル */
+      flex: 1;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+
+    /* フッターエリア */
+    footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .card{
+display: flex;
+width: 363px;
+padding: 24px;
+flex-direction: column;
+align-items: center;
+gap: 24px;
+border: 1px solid;
+
+    }
+
+    /* レスポンシブなスタイル */
+    @media screen and (max-width: 767px) {
+      header {
+        padding: 10px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      nav {
+        margin-top: 0;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+      }
+
+      nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      nav ul li a {
+        padding: 5px 10px;
+      }
+
+      .content-area {
+        flex-direction: column;
+      }
+
+      main, aside {
+        flex: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        ロゴ
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">ナビゲーション1</a></li>
+          <li><a href="#">ナビゲーション2</a></li>
+          <li><a href="#">ナビゲーション3</a></li>
+          <li><a href="#">ナビゲーション4</a></li>
+          <li><a href="#">ナビゲーション5</a></li>
+        </ul>
+      </nav>
+      <div class="breadcrumbs">
+        ホーム > サンプルページ
+      </div>
+    </header>
+    <div class="visual-area">
+      <h1>ビジュアルエリア</h1>
+      <img src="<!-- 画像のURL -->" alt="フリー素材の画像">
+    </div>
+    <div class="content-area">
+      <main>
+        <h2>メインコンテンツ</h2>
+        <div class="card">
+          <img src="photo.png" alt="フリー素材の画像">
+          </div>
+
+
+        <p>ここにメインコンテンツのコンテンツが入ります。</p>
+      </main>
+      <aside>
+        <h2>サイドバー</h2>
+        <p>ここにサイドバーのコンテンツが入ります。</p>
+      </aside>
+    </div>
+    <footer>
+      <p>フッターエリアのコンテンツ</p>
+    </footer>
+  </div>
+</body>
+</html>
